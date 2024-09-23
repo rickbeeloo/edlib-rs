@@ -44,6 +44,7 @@ fn main() {
     let mut libdir = String::from("cargo:rustc-link-search=");
     libdir.push_str(out_path.to_str().unwrap());
     libdir.push_str("/lib");
+    println!("{}64",libdir);
     println!("{}",libdir);
     println!("cargo:rustc-link-lib=edlib");
     println!("{}", lib_std);
